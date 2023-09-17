@@ -1,12 +1,11 @@
-import { fastify } from "fastify";
+import { fastify } from 'fastify'
+import { getAllPromptsRoute } from './routes/get-all-prompts'
 
 const PORT = 3333
 
 const app = fastify()
 
-app.get('/', () => {
-    return 'hello word!'
-})
+app.register(getAllPromptsRoute)
 
 //serviços de armazenamento
 //amazon S3 aws
