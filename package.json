@@ -18,6 +18,7 @@
   "homepage": "https://github.com/FranciscoYlderlan/Automated-Video-Description-Composer-API#readme",
   "devDependencies": {
     "@types/node": "^20.6.1",
+    "dotenv": "^16.3.1",
     "prisma": "^5.3.1",
     "tsx": "^3.12.10",
     "typescript": "^5.2.2"
