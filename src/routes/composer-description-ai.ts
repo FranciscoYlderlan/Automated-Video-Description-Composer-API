@@ -22,3 +22,6 @@ export async function composerDescriptionAIRoute(app : FastifyInstance) {
         })
 
         const { prompt } = bodySchema.parse(req.body)
+    
+    })
+}
