@@ -19,10 +19,10 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/6e1c5b99-6c8b-446e-bef9-0d166ccbc5c4/transcription
+POST http://localhost:3333/videos/afa3f440-e681-462e-bb53-61d91cccddcb/transcription
 Content-Type: application/json
 
 {
-    "prompt": "piriri pororo pururu"
+    "prompt": ""
 }
 
