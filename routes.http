@@ -4,5 +4,25 @@ GET http://localhost:3333/prompts
 
 ###
 
-# @name get-prompt
-GET http://localhost:3333/prompts
+# @name upload-video
+POST http://localhost:3333/videos
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="example.mp3"
+Content-Type: audio/mpeg
+
+< ./example.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+###
+
+# @name create-transcription
+POST http://localhost:3333/videos/6e1c5b99-6c8b-446e-bef9-0d166ccbc5c4/transcription
+Content-Type: application/json
+
+{
+    "prompt": "piriri pororo pururu"
+}
+
