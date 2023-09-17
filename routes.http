@@ -26,3 +26,13 @@ Content-Type: application/json
     "prompt": ""
 }
 
+###
+
+# @name composer-description-ai
+POST http://localhost:3333/ai/composer
+Content-Type: application/json
+
+{
+    "id": "afa3f440-e681-462e-bb53-61d91cccddcb", 
+    "template":"Gere um resumo sucinto da transcrição informada a seguir: '''{transcription}'''" 
+}
